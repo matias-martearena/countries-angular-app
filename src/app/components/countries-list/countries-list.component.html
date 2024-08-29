@@ -1,26 +1,16 @@
-<table>
-    <tr>
-        <th>
-            Nombre
-        </th>
-        <td>
-            Argentina
-        </td>
-    </tr>
-    <tr>
-        <th>
-            Capital
-        </th>
-        <td>
-            Buenos Aires
-        </td>
-    </tr>
-    <tr>
-        <th>
-            Idioma
-        </th>
-        <td>
-            Español
-        </td>
-    </tr>
-</table>
+ <!-- <div *ngIf="countries.length > 0; else noResults" class="country-list">
+    <ul>
+      <li *ngFor="let country of countries" class="country-item">
+        <h3>{{ country.name.common }}</h3>
+        <p>Capital: {{ country.capital }}</p>
+        <p>Region: {{ country.region }}</p>
+        <img [src]="country.flags.svg" alt="Flag of {{ country.name.common }}" class="flag">
+      </li>
+    </ul>
+  </div>
+-->
+  
+  <ng-template #noResults>
+    <p>No countries found. Try searching again.</p>
+  </ng-template>
+  

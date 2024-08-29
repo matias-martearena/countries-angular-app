@@ -1,6 +1,17 @@
-<form action="">
-    <label for="searcher">
-        <p class="hidden">search</p>
-        <input id="searcher" type="text">
-    </label>
-</form>
+<div class="w-72 mt-2">
+    <form
+        class="search-country-form relative w-full min-w-[200px] h-10"
+        [formGroup]="countryForm"
+        (ngSubmit)="onSearch()">
+        <label for="country">
+            <p class="hidden">Search</p>
+            <input
+                class="w-full h-full bg-[#fbf6f5] outline outline-0 focus:outline-0 transition-all text-sm px-3 py-2.5 rounded-[7px]"
+                type="text"
+                id="country"
+                name="country"
+                placeholder="Search countries"
+                formControlName="name" />
+        </label>
+    </form>
+</div>
