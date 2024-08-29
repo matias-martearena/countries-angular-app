@@ -1,16 +1,14 @@
- <!-- <div *ngIf="countries.length > 0; else noResults" class="country-list">
-    <ul>
-      <li *ngFor="let country of countries" class="country-item">
-        <h3>{{ country.name.common }}</h3>
-        <p>Capital: {{ country.capital }}</p>
-        <p>Region: {{ country.region }}</p>
-        <img [src]="country.flags.svg" alt="Flag of {{ country.name.common }}" class="flag">
-      </li>
-    </ul>
-  </div>
--->
-  
-  <ng-template #noResults>
-    <p>No countries found. Try searching again.</p>
-  </ng-template>
-  
+@if (countries.length !== 0) { @for (country of countries; track $index) {
+<p>{{ country.name.common }}</p>
+<p>{{ country.capital }}</p>
+<p>{{ country.region }}</p>
+<picture>
+  <img
+    [src]="country.flags.png"
+    [alt]="country.name.common"
+  />
+</picture>
+<p>paise</p>
+} } @else {
+<p>No ha paises que mostrar</p>
+}
