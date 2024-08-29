@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-countries-list',
+  selector: 'home-countries-list',
   standalone: true,
   imports: [],
   templateUrl: './countries-list.component.html',

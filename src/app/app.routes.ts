@@ -1,10 +1,11 @@
 import { Routes } from '@angular/router'
+import { HomeComponent } from './pages/home/home.component'
 
 export const routes: Routes = [
     {
         path: '',
-        component: inicio,
-        children: [
+        component: HomeComponent,
+        /*children: [
             {
                 path: '/capitales',
                 title: 'capitales',
@@ -20,7 +21,6 @@ export const routes: Routes = [
                 title: 'ciudades',
                 component: 'componente',
             },
-        ],
+        ],*/
     },
-    { path: 'home', component: home },
 ]
