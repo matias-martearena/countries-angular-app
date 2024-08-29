@@ -1,26 +1,26 @@
-import { Routes } from '@angular/router';
+import { Routes } from '@angular/router'
 
 export const routes: Routes = [
     {
         path: '',
-        component: inicio ,
+        component: inicio,
         children: [
             {
                 path: '/capitales',
                 title: 'capitales',
-                component: "componente",
+                component: 'componente',
             },
             {
                 path: '/paises',
                 title: 'paises',
-                component: "componentepais"
+                component: 'componentepais',
             },
             {
                 path: '/ciudad',
                 title: 'ciudades',
-                component: "componente"
-            }
-        ]
+                component: 'componente',
+            },
+        ],
     },
-    {path: 'home', component: home},
-];
+    { path: 'home', component: home },
+]
